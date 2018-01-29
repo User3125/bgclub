@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.ilvinas.stalozaidimuklubas.LoginActivity"
+    tools:showIn="@layout/activity_login">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:background="@drawable/bckgrnd"
+        android:backgroundTintMode="multiply"
+        android:backgroundTint="@color/colorTint"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/prompt_name"
+            android:textColor="@color/colorText"
+            android:textAlignment="center"/>
+
+        <EditText
+            android:id="@+id/login_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:hint="@string/prompt_name"
+            android:textAlignment="center"
+            android:textColorHint="@color/colorHint"
+            android:textColor="@color/colorHint"
+            android:maxLines="1"/>
+
+        <Space
+            android:layout_height="25dp"
+            android:layout_width="match_parent"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/prompt_password"
+            android:textColor="@color/colorText"
+            android:textAlignment="center"/>
+
+        <EditText
+            android:id="@+id/login_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:hint="@string/prompt_password"
+            android:textAlignment="center"
+            android:textColorHint="@color/colorHint"
+            android:textColor="@color/colorHint"
+            android:password="true"
+            android:maxLines="1"/>
+
+        <Space
+            android:layout_height="25dp"
+            android:layout_width="match_parent"/>
+
+        <Button
+            android:id="@+id/button_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/action_sign_in"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/colorAccent"/>
+
+        <Space
+            android:layout_height="25dp"
+            android:layout_width="match_parent"/>
+
+        <Button
+            android:id="@+id/button_register0"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/action_register"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/colorAccent"/>
+
+        <Space
+            android:layout_height="25dp"
+            android:layout_width="match_parent"/>
+
+        <CheckBox
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:textColor="@color/colorText"
+            android:text="@string/action_remember"/>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

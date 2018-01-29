@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">Stalo Žaidimų Klubas</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_login">Prisijungimas</string>
+    <string name="title_activity_register">Registracija</string>
+    <string name="title_activity_main">Stalo Žaidimų Klubas</string>
+
+    <!-- Strings related to login and registration -->
+    <string name="prompt_name">Prisijungimo vardas</string>
+    <string name="prompt_password">Slaptažodis</string>
+    <string name="prompt_mail">El. paštas</string>
+    <string name="action_sign_in">Prisijungti</string>
+    <string name="action_register">Registruotis</string>
+    <string name="action_cancel">Grįžti</string>
+    <string name="action_remember">Prisiminti mane</string>
+    <string name="invalid_credentials">Netinkamai įvesti prisijungimo duomenys</string>
+    <string name="prompt_credentials">Naudokite tik raides ir skaičius</string>
+    <string name="invalid_mail">Netinkamai įvestas el. pašto adresas</string>
+    <string name="invalid_password_mismatch">Slaptažodžiai nesutampa</string>
+    <string name="registration_successfull">Registracija sėkminga</string>
+
+    <!-- Strings related to main -->
+    <string name="input_id">Įrašo ID</string>
+    <string name="input_name">Pavadinimas</string>
+    <string name="input_cats">Kategorijos</string>
+    <string name="input_cat01">Dedukciniai</string>
+    <string name="input_cat02">Ekonominiai</string>
+    <string name="input_cat03">Dviejų žaidėjų</string>
+    <string name="input_cat04">Fantasy</string>
+    <string name="input_cat05">Kariniai</string>
+    <string name="input_cat06">Kauliukų</string>
+    <string name="input_cat07">Kooperaciniai</string>
+    <string name="input_cat08">Kortų</string>
+    <string name="input_cat09">Miniatiūros</string>
+    <string name="input_cat10">Papildymai</string>
+    <string name="input_cat11">Strateginiai</string>
+    <string name="input_cat12">Šeimai</string>
+    <string name="input_cat13">Teritorijos kontrolės</string>
+    <string name="input_cat14">Tyrinėjimo</string>
+    <string name="input_cat15">Vakarėlių</string>
+    <string name="input_year">Išleidimo metai</string>
+    <string name="input_publisher">Leidėjas</string>
+    <string name="input_author">Autorius</string>
+    <string name="input_owner">Savininkas</string>
+    <string name="input_holder">Turėtojas</string>
+</resources>

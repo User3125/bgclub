@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.ilvinas.stalozaidimuklubas.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@drawable/bckgrnd"
+        android:backgroundTintMode="multiply"
+        android:backgroundTint="@color/colorTint"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/input_id"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/font_hint"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:hint="@string/input_id"
+            android:textColorHint="@color/colorHint"
+            android:textColor="@color/colorHint"
+            android:textSize="@dimen/font_input"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/input_name"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/font_hint"/>
+
+        <EditText
+            android:id="@+id/editText3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:hint="@string/input_name"
+            android:textColorHint="@color/colorHint"
+            android:textColor="@color/colorHint"
+            android:textSize="@dimen/font_input"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/input_year"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/font_hint"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:hint="@string/input_year"
+            android:textColorHint="@color/colorHint"
+            android:textColor="@color/colorHint"
+            android:textSize="@dimen/font_input"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/input_author"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/font_hint"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:hint="@string/input_author"
+            android:textColorHint="@color/colorHint"
+            android:textColor="@color/colorHint"
+            android:textSize="@dimen/font_input"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/input_publisher"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/font_hint"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:hint="@string/input_publisher"
+            android:textColorHint="@color/colorHint"
+            android:textColor="@color/colorHint"
+            android:textSize="@dimen/font_input"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/input_cats"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/font_hint"/>
+
+        <CheckBox
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:textColor="@color/colorText"
+            android:text="@string/input_cat01"
+            android:textSize="@dimen/font_text"/>
+
+        <CheckBox
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:textColor="@color/colorText"
+            android:text="@string/input_cat02"
+            android:textSize="@dimen/font_text"/>
+
+        <CheckBox
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:textColor="@color/colorText"
+            android:text="@string/input_cat03"
+            android:textSize="@dimen/font_text"/>
+
+        <CheckBox
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:textColor="@color/colorText"
+            android:text="@string/input_cat04"
+            android:textSize="@dimen/font_text"/>
+
+        <CheckBox
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:textColor="@color/colorText"
+            android:text="@string/input_cat05"
+            android:textSize="@dimen/font_text"/>
+
+        <CheckBox
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:textColor="@color/colorText"
+            android:text="@string/input_cat06"
+            android:textSize="@dimen/font_text"/>
+
+        <CheckBox
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:textColor="@color/colorText"
+            android:text="@string/input_cat07"
+            android:textSize="@dimen/font_text"/>
+
+        <CheckBox
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:textColor="@color/colorText"
+            android:text="@string/input_cat08"
+            android:textSize="@dimen/font_text"/>
+
+        <CheckBox
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:textColor="@color/colorText"
+            android:text="@string/input_cat09"
+            android:textSize="@dimen/font_text"/>
+
+        <CheckBox
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:textColor="@color/colorText"
+            android:text="@string/input_cat10"
+            android:textSize="@dimen/font_text"/>
+
+        <CheckBox
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:textColor="@color/colorText"
+            android:text="@string/input_cat11"
+            android:textSize="@dimen/font_text"/>
+
+        <CheckBox
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:textColor="@color/colorText"
+            android:text="@string/input_cat12"
+            android:textSize="@dimen/font_text"/>
+
+        <CheckBox
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:textColor="@color/colorText"
+            android:text="@string/input_cat13"
+            android:textSize="@dimen/font_text"/>
+
+        <CheckBox
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:textColor="@color/colorText"
+            android:text="@string/input_cat14"
+            android:textSize="@dimen/font_text"/>
+
+        <CheckBox
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:textColor="@color/colorText"
+            android:text="@string/input_cat15"
+            android:textSize="@dimen/font_text"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/input_owner"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/font_hint"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:hint="@string/input_owner"
+            android:textColorHint="@color/colorHint"
+            android:textColor="@color/colorHint"
+            android:textSize="@dimen/font_input"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/input_holder"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/font_hint"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:hint="@string/input_holder"
+            android:textColorHint="@color/colorHint"
+            android:textColor="@color/colorHint"
+            android:textSize="@dimen/font_input"/>
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
