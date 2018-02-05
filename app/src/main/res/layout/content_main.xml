@@ -8,6 +8,9 @@
     tools:context="com.example.ilvinas.stalozaidimuklubas.MainActivity"
     tools:showIn="@layout/activity_main">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -94,15 +97,12 @@
             android:textColor="@color/colorAccent"
             android:textSize="@dimen/font_hint"/>
 
-        <EditText
+        <Spinner
+            android:id="@+id/sp_publisher"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="text"
-            android:hint="@string/input_publisher"
-            android:textColorHint="@color/colorHint"
-            android:textColor="@color/colorHint"
-            android:textSize="@dimen/font_input"/>
+            android:entries="@array/publishers"
+            android:prompt="@string/spinner_prompt" />
 
         <TextView
             android:layout_width="match_parent"
@@ -251,5 +251,6 @@
             android:textSize="@dimen/font_input"/>
 
     </LinearLayout>
+    </ScrollView>
 
 </android.support.constraint.ConstraintLayout>

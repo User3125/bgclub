@@ -10,7 +10,9 @@ import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class LoginActivity extends AppCompatActivity {
@@ -24,6 +26,21 @@ public class LoginActivity extends AppCompatActivity {
 
         final EditText etUsername = (EditText) findViewById(R.id.login_username);
         final EditText etPassword = (EditText) findViewById(R.id.login_password);
+        final CheckBox cbRememberMe = (CheckBox) findViewById(R.id.cb_rememberme);
+        final User user = new User(LoginActivity.this);
+
+        etUsername.setError(null);
+        etPassword.setError(null);
+
+        cbRememberMe.setChecked(user.isRemembered());
+
+        if(user.isRemembered()) {
+            etUsername.setText(user.getUsernameForLogin(), TextView.BufferType.EDITABLE);
+            etPassword.setText(user.getPasswordForLogin(), TextView.BufferType.EDITABLE);
+        }else{
+            etUsername.setText("", TextView.BufferType.EDITABLE);
+            etPassword.setText("", TextView.BufferType.EDITABLE);
+        }
 
         Button button_login = (Button) findViewById(R.id.button_login);
         button_login.setOnClickListener(new View.OnClickListener() {
@@ -34,6 +51,11 @@ public class LoginActivity extends AppCompatActivity {
                     view.getContext().startActivity(Intent);
                 } else {
                     Toast.makeText(view.getContext(), getResources().getString(R.string.invalid_credentials), Toast.LENGTH_SHORT).show();
+                }
+                if(cbRememberMe.isChecked()){
+                    user.setRememberMeKeyForLogin(true);
+                }else{
+                    user.setRememberMeKeyForLogin(false);
                 }
             }
         });

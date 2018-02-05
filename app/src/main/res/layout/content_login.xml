@@ -90,6 +90,7 @@
             android:layout_width="match_parent"/>
 
         <CheckBox
+            android:id="@+id/cb_rememberme"
             android:layout_height="wrap_content"
             android:layout_width="match_parent"
             android:textColor="@color/colorText"

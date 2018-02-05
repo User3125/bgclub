@@ -43,4 +43,13 @@
     <string name="input_author">Autorius</string>
     <string name="input_owner">Savininkas</string>
     <string name="input_holder">Turėtojas</string>
+
+    <string-array name="publishers">
+        <item>Hasbro</item>
+        <item>Days of Wonder</item>
+        <item>Mayfair Games</item>
+        <item>Tactic</item>
+        <item>Amigo</item>
+    </string-array>
+    <string name="spinner_prompt">Leidėjas</string>
 </resources>
