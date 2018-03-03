@@ -2,8 +2,6 @@ package com.example.ilvinas.stalozaidimuklubas;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
@@ -14,6 +12,8 @@ import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import java.util.List;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -46,13 +46,28 @@ public class LoginActivity extends AppCompatActivity {
         button_login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view){
+                DBHandler db = new DBHandler(LoginActivity.this);
                 if (Validation.isValidCredentials(etUsername.getText().toString()) && Validation.isValidCredentials(etPassword.getText().toString())) {
-                    Intent Intent = new Intent(view.getContext(), MainActivity.class);
-                    view.getContext().startActivity(Intent);
+                    List<User> possibles = db.getUsers(etUsername.getText().toString());
+                    if (!possibles.isEmpty()) {
+                        for (User temp:possibles) {
+                            if (etPassword.getText().toString().equals(temp.getPasswordForRegister())) {
+                                Toast.makeText(view.getContext(), "Sveiki, " + temp.getUsernameForRegister().toString() + "!", Toast.LENGTH_SHORT).show();
+                                Intent Intent = new Intent(view.getContext(), MainActivity.class);
+                                view.getContext().startActivity(Intent);
+                            } else {
+                                Toast.makeText(view.getContext(), getResources().getString(R.string.invalid_pass), Toast.LENGTH_SHORT).show();
+                            }
+                        }
+                    } else {
+                        Toast.makeText(view.getContext(), getResources().getString(R.string.invalid_user), Toast.LENGTH_SHORT).show();
+                    }
                 } else {
                     Toast.makeText(view.getContext(), getResources().getString(R.string.invalid_credentials), Toast.LENGTH_SHORT).show();
                 }
                 if(cbRememberMe.isChecked()){
+                    user.setUsernameForLogin(etUsername.getText().toString());
+                    user.setPasswordForLogin(etPassword.getText().toString());
                     user.setRememberMeKeyForLogin(true);
                 }else{
                     user.setRememberMeKeyForLogin(false);

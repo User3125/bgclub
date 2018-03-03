@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.ilvinas.stalozaidimuklubas.AddNewActivity"
+    tools:showIn="@layout/activity_addnew">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@drawable/bckgrnd"
+        android:backgroundTintMode="multiply"
+        android:backgroundTint="@color/colorTint"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/input_title"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/font_hint"/>
+
+        <EditText
+            android:id="@+id/input_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:hint="@string/input_title"
+            android:textColorHint="@color/colorHint"
+            android:textColor="@color/colorHint"
+            android:textSize="@dimen/font_input"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/input_year"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/font_hint"/>
+
+        <EditText
+            android:id="@+id/input_year"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="phone"
+            android:hint="@string/input_year"
+            android:textColorHint="@color/colorHint"
+            android:textColor="@color/colorHint"
+            android:textSize="@dimen/font_input"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/input_author"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/font_hint"/>
+
+        <EditText
+            android:id="@+id/input_author"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:hint="@string/input_author"
+            android:textColorHint="@color/colorHint"
+            android:textColor="@color/colorHint"
+            android:textSize="@dimen/font_input"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/input_publisher"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/font_hint"/>
+
+        <Spinner
+            android:id="@+id/sp_publisher"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/publishers"
+            android:background="@color/colorPrimaryDark"
+            android:prompt="@string/spinner_prompt" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/input_cats"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/font_hint"/>
+
+        <CheckBox
+            android:id="@+id/cb_cat01"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:textColor="@color/colorText"
+            android:text="@string/input_cat01"
+            android:textSize="@dimen/font_text"/>
+
+        <CheckBox
+            android:id="@+id/cb_cat02"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:textColor="@color/colorText"
+            android:text="@string/input_cat02"
+            android:textSize="@dimen/font_text"/>
+
+        <CheckBox
+            android:id="@+id/cb_cat03"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:textColor="@color/colorText"
+            android:text="@string/input_cat03"
+            android:textSize="@dimen/font_text"/>
+
+        <CheckBox
+            android:id="@+id/cb_cat04"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:textColor="@color/colorText"
+            android:text="@string/input_cat04"
+            android:textSize="@dimen/font_text"/>
+
+        <CheckBox
+            android:id="@+id/cb_cat05"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:textColor="@color/colorText"
+            android:text="@string/input_cat05"
+            android:textSize="@dimen/font_text"/>
+
+        <CheckBox
+            android:id="@+id/cb_cat06"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:textColor="@color/colorText"
+            android:text="@string/input_cat06"
+            android:textSize="@dimen/font_text"/>
+
+        <CheckBox
+            android:id="@+id/cb_cat07"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:textColor="@color/colorText"
+            android:text="@string/input_cat07"
+            android:textSize="@dimen/font_text"/>
+
+        <CheckBox
+            android:id="@+id/cb_cat08"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:textColor="@color/colorText"
+            android:text="@string/input_cat08"
+            android:textSize="@dimen/font_text"/>
+
+        <CheckBox
+            android:id="@+id/cb_cat09"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:textColor="@color/colorText"
+            android:text="@string/input_cat09"
+            android:textSize="@dimen/font_text"/>
+
+        <CheckBox
+            android:id="@+id/cb_cat10"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:textColor="@color/colorText"
+            android:text="@string/input_cat10"
+            android:textSize="@dimen/font_text"/>
+
+        <CheckBox
+            android:id="@+id/cb_cat11"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:textColor="@color/colorText"
+            android:text="@string/input_cat11"
+            android:textSize="@dimen/font_text"/>
+
+        <CheckBox
+            android:id="@+id/cb_cat12"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:textColor="@color/colorText"
+            android:text="@string/input_cat12"
+            android:textSize="@dimen/font_text"/>
+
+        <CheckBox
+            android:id="@+id/cb_cat13"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:textColor="@color/colorText"
+            android:text="@string/input_cat13"
+            android:textSize="@dimen/font_text"/>
+
+        <CheckBox
+            android:id="@+id/cb_cat14"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:textColor="@color/colorText"
+            android:text="@string/input_cat14"
+            android:textSize="@dimen/font_text"/>
+
+        <CheckBox
+            android:id="@+id/cb_cat15"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:textColor="@color/colorText"
+            android:text="@string/input_cat15"
+            android:textSize="@dimen/font_text"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/input_owner"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/font_hint"/>
+
+        <EditText
+            android:id="@+id/input_owner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:hint="@string/input_owner"
+            android:textColorHint="@color/colorHint"
+            android:textColor="@color/colorHint"
+            android:textSize="@dimen/font_input"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/input_holder"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/font_hint"/>
+
+        <EditText
+            android:id="@+id/input_holder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:hint="@string/input_holder"
+            android:textColorHint="@color/colorHint"
+            android:textColor="@color/colorHint"
+            android:textSize="@dimen/font_input"/>
+
+        <Button
+            android:id="@+id/button_add_new"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/input_addnew"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/colorAccent"/>
+
+        <Space
+            android:layout_height="25dp"
+            android:layout_width="match_parent"/>
+
+        <Button
+            android:id="@+id/button_add_update"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/input_update"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/colorAccent"/>
+
+        <Space
+            android:layout_height="25dp"
+            android:layout_width="match_parent"/>
+
+        <Button
+            android:id="@+id/button_add_delete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/input_delete"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/colorAccent"/>
+
+        <Space
+            android:layout_height="25dp"
+            android:layout_width="match_parent"/>
+
+        <Button
+            android:id="@+id/button_add_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/input_cancel"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/colorAccent"/>
+
+    </LinearLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

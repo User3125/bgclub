@@ -3,7 +3,9 @@
     <string name="action_settings">Settings</string>
     <string name="title_activity_login">Prisijungimas</string>
     <string name="title_activity_register">Registracija</string>
-    <string name="title_activity_main">Stalo Žaidimų Klubas</string>
+    <string name="title_activity_addnew">Įrašo kūrimas</string>
+    <string name="title_activity_update">Įrašo redagavimas</string>
+    <string name="title_main">Stalo Žaidimų Klubas</string>
 
     <!-- Strings related to login and registration -->
     <string name="prompt_name">Prisijungimo vardas</string>
@@ -14,14 +16,19 @@
     <string name="action_cancel">Grįžti</string>
     <string name="action_remember">Prisiminti mane</string>
     <string name="invalid_credentials">Netinkamai įvesti prisijungimo duomenys</string>
+    <string name="invalid_user">Mes tamstos nepažįstam. Prisiregistruokite :)</string>
+    <string name="invalid_pass">Neteisingas slaptažodis</string>
     <string name="prompt_credentials">Naudokite tik raides ir skaičius</string>
     <string name="invalid_mail">Netinkamai įvestas el. pašto adresas</string>
     <string name="invalid_password_mismatch">Slaptažodžiai nesutampa</string>
     <string name="registration_successfull">Registracija sėkminga</string>
 
-    <!-- Strings related to main -->
-    <string name="input_id">Įrašo ID</string>
-    <string name="input_name">Pavadinimas</string>
+    <!-- Strings related to AddNew -->
+    <string name="main_addnew">Naujas įrašas</string>
+    <string name="main_logout">Atsijungti</string>
+
+    <!-- Strings related to AddNew -->
+    <string name="input_title">Pavadinimas</string>
     <string name="input_cats">Kategorijos</string>
     <string name="input_cat01">Dedukciniai</string>
     <string name="input_cat02">Ekonominiai</string>
@@ -43,6 +50,25 @@
     <string name="input_author">Autorius</string>
     <string name="input_owner">Savininkas</string>
     <string name="input_holder">Turėtojas</string>
+    <string name="input_addnew">Kurti įrašą</string>
+    <string name="input_update">Atnaujinti įrašą</string>
+    <string name="input_delete">Trinti įrašą</string>
+    <string name="input_cancel">Atšaukti</string>
+    <string name="invalid_id">Naudokite tik skaičius</string>
+    <string name="invalid_title">Ir sugebėk tu man čia nepataikyt...</string>
+    <string name="invalid_year">Nuo 1800 iki 2099 metų</string>
+    <string name="invalid_cbselection">Pasirinkite bent vieną kategoriją</string>
+    <string name="invalid_spselection">Pasirinkite leidėją</string>
+
+    <!-- Strings related to Search -->
+    <string name="search_title">Ieškoti</string>
+
+    <!-- Strings related to Container -->
+    <string name="cont_title">Title</string>
+    <string name="cont_author">Author</string>
+    <string name="cont_publisher">Publisher</string>
+    <string name="cont_year">Year</string>
+    <string name="cont_cats">Categories</string>
 
     <string-array name="publishers">
         <item>Hasbro</item>
@@ -52,4 +78,6 @@
         <item>Amigo</item>
     </string-array>
     <string name="spinner_prompt">Leidėjas</string>
+
+    <string name="title_activity_main">MainActivity</string>
 </resources>

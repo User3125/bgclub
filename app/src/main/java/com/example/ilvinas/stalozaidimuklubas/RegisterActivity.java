@@ -20,6 +20,8 @@ public class RegisterActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+        final int USER_LEVEL_DEFAULT = 1;
+
         final EditText etUsername = (EditText) findViewById(R.id.register_username);
         final EditText etPassword1 = (EditText) findViewById(R.id.register_password1);
         final EditText etPassword2 = (EditText) findViewById(R.id.register_password2);
@@ -59,6 +61,9 @@ public class RegisterActivity extends AppCompatActivity {
                     etMail.requestFocus();
                     etMail.setError(getResources().getString(R.string.invalid_mail));
                 } else {
+                    User user = new User(etUsername.getText().toString(), etPassword1.getText().toString(), etMail.getText().toString(), USER_LEVEL_DEFAULT);
+                    DBHandler db = new DBHandler(RegisterActivity.this);
+                    db.addUser(user);
                     Toast.makeText(view.getContext(), getResources().getString(R.string.registration_successfull), Toast.LENGTH_SHORT).show();
                     Intent Intent = new Intent(view.getContext(), LoginActivity.class);
                     view.getContext().startActivity(Intent);

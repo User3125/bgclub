@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimaryDark"
+    android:padding="5dp"
+    android:layout_margin="5dp">
+
+    <TextView
+        android:id="@+id/id_cont_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/cont_title"
+        android:textColor="@color/colorAccent"
+        android:layout_margin="5dp"/>
+
+    <TextView
+        android:id="@+id/id_cont_year"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/cont_year"
+        android:textColor="@color/colorText"
+        android:layout_margin="5dp"
+        android:layout_toRightOf="@id/id_cont_title"
+        android:layout_alignParentEnd="true"
+        android:textAlignment="textEnd"/>
+
+    <TextView
+        android:id="@+id/id_cont_author"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/cont_author"
+        android:textColor="@color/colorText"
+        android:layout_margin="5dp"
+        android:layout_below="@id/id_cont_title" />
+
+    <TextView
+        android:id="@+id/id_cont_publisher"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/cont_publisher"
+        android:textColor="@color/colorText"
+        android:layout_margin="5dp"
+        android:layout_below="@id/id_cont_title"
+        android:layout_alignParentRight="true"/>
+
+    <TextView
+        android:id="@+id/id_cont_cats"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="@string/cont_cats"
+        android:textColor="@color/colorText"
+        android:layout_margin="5dp"
+        android:layout_below="@id/id_cont_author"/>
+
+</RelativeLayout>
